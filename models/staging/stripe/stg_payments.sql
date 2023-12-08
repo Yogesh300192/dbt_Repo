@@ -1,1 +1,1 @@
-select * from  RAW.STRIPE.PAYMENT
+select orderid as order_id,amount from  RAW.STRIPE.PAYMENT

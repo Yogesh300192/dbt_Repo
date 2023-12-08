@@ -35,7 +35,6 @@ clean-targets: # directories to be removed by `dbt clean`
 
 models:
   staging:
-    stripe:
     +materialized: table
   marts:
     +materialized: view
