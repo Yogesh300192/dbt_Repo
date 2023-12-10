@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_customers
-    columns: 
+    columns:
       - name: customer_id
         tests:
           - unique
@@ -23,3 +23,8 @@ models:
                 - returned
                 - return_pending
                 - placed
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
